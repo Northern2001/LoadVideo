@@ -1,0 +1,297 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!-- Toolbar Default Style -->
+    <declare-styleable name="cpn_toolbar_default">
+        <attr name="isBackEnable" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="actionLeft" format="string" />
+        <attr name="actionRight" format="string" />
+        <attr name="isSearchEnable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnQuizSpinner">
+        <attr name="cqs_enabled" format="boolean"/>
+        <attr name="cqs_hint" format="string"/>
+        <attr name="cqs_gravity" format="integer"/>
+        <attr name="cqs_textSize" format="float|dimension" />
+        <attr name="cqs_hideHintWhenDropDown" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnSpinner">
+        <attr name="cs_enabled" format="boolean"/>
+        <attr name="cs_hint" format="string"/>
+        <attr name="cs_gravity" format="integer"/>
+        <attr name="cs_textSize" format="float|dimension" />
+        <attr name="cs_hideHintWhenDropDown" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnButton">
+        <attr name="useBa" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CpnTab"></declare-styleable>
+    <!-- CpnCircleImageView style -->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCalendarView">
+        <attr name="calendarTitleTextColor" format="color" />
+        <attr name="dayOfWeekTextColor" format="color" />
+        <attr name="dayOfMonthTextColor" format="color" />
+        <attr name="calendarBackgroundColor" format="color" />
+        <attr name="disabledDayBackgroundColor" format="color" />
+        <attr name="disabledDayTextColor" format="color" />
+        <attr name="selectedDayBackgroundColor" format="color" />
+        <attr name="selectedDayTextColor" format="color" />
+        <attr name="weekLayoutBackgroundColor" format="color" />
+        <attr name="titleLayoutBackgroundColor" format="color" />
+        <attr name="currentDayOfMonthColor" format="color" />
+        <attr name="isShowtitle" format="boolean" />
+        <attr name="titleStartEndTime" format="string" />
+        <attr name="isMarginController" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StartEndTimeView">
+        <attr name="timeColor" format="color" />
+        <attr name="titleTime" format="string" />
+        <attr name="visibilityNextHour" format="boolean" />
+        <attr name="visibilityPreHour" format="boolean" />
+        <attr name="visibilityNextMinute" format="boolean" />
+        <attr name="visibilityPreMinute" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DottedTimeBar">
+        <attr name="dots_positions" format="reference" />
+        <attr name="dots_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnTextProgressSeekBar">
+        <attr name="android:max" />
+        <attr name="android:progress" />
+    </declare-styleable>
+    <declare-styleable name="customProgress">
+        <attr name="backgroundColor" format="color" />
+        <attr name="backgroundProgress" format="color" />
+        <attr name="progress" format="float" />
+        <attr name="includeImage" format="boolean" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar" tools:ignore="ResourceName">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starImageWidth" format="dimension" />
+        <attr name="starImageHeight" format="dimension" />
+        <attr name="starImagePadding" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starNum" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starHalf" format="reference" />
+        <attr name="clickable" format="boolean" />
+        <attr name="halfstart" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnInfoToolbar">
+        <attr name="infoLayout" format="reference" />
+        <attr name="infoTitleColor" format="color" />
+        <attr name="infoTextColor" format="color" />
+        <attr name="infoIconColor" format="color" />
+        <attr name="infoEnableClick" format="boolean" />
+        <attr name="infoShowRank" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnDropShadowView">
+        <attr name="dropShadowRadius" format="dimension" />
+        <attr name="dropShadowDx" format="dimension" />
+        <attr name="dropShadowDy" format="dimension" />
+        <attr name="dropShadowColor" format="color" />
+        <attr name="dropShadowBackground" format="color" />
+        <attr name="dropShowdownConner" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CalendarDayView">
+        <attr name="dayHeight" format="dimension" />
+        <attr name="debug" format="boolean" />
+        <attr name="eventMarginLeft" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="textHourSize" format="dimension" />
+        <attr name="startHour" format="integer" />
+        <attr name="endHour" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnInfoToolbar_report">
+        <attr name="title_report" format="string" />
+        <attr name="subject" format="string" />
+        <attr name="showRightLayout" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="cpn_line_chart">
+        <attr name="title_line_chart" format="string" />
+        <attr name="line_color" format="color" />
+        <attr name="background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnGifAndAudio">
+        <attr name="gif_resource" format="reference" />
+        <attr name="audio_path" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnSelectDate">
+        <attr name="tabIsShowTabDate" format="boolean" />
+        <attr name="tabBackgroundColor" format="color" />
+        <attr name="tabDateColor" format="color" />
+        <attr name="tabIsShowNavigationDate" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnTitleStatistic">
+        <attr name="android:title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="button_download">
+        <attr name="icon_size" format="dimension" />
+        <attr name="icon_tin_color" format="color" />
+        <attr name="textsize" format="dimension" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="cpn_chart">
+        <attr name="width" format="dimension" />
+        <attr name="height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorSeekBar">
+        <attr name="colorSeeds" format="reference" />
+        <attr name="barHeight" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+        <attr name="showAlphaBar" format="boolean" />
+        <attr name="showColorBar" format="boolean" />
+        <attr name="alphaBarPosition" format="integer" />
+        <attr name="colorBarPosition" format="integer" />
+        <attr name="bgColor" format="color" />
+        <attr name="barRadius" format="dimension" />
+        <attr name="barMargin" format="dimension" />
+        <attr name="maxPosition" format="integer" />
+        <attr name="isVertical" format="boolean" />
+        <attr name="disabledColor" format="color" />
+        <attr name="showThumb" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CpnImageQuizView">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="cornerLeftTop" format="dimension" />
+        <attr name="cornerLeftBottom" format="dimension" />
+        <attr name="cornerRightTop" format="dimension" />
+        <attr name="cornerRightBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CpnStudyingMissionItem">
+        <attr name="start_gradient_color" format="reference" />
+        <attr name="end_gradient_color" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CpnHiddenMissionView">
+        <attr name="progressbar_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnTitleExercise">
+        <attr name="cpn_title_background" format="reference" />
+        <attr name="cpn_background_color_tint" format="color" />
+        <attr name="cpn_title_index" format="string" />
+        <attr name="cpn_title_content" format="string" />
+        <attr name="cpn_all_bold" format="boolean" />
+        <attr name="cpn_normal_font" format="reference"/>
+        <attr name="cpn_bold_font" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CpnTitle">
+        <attr name="nexta_title_background" format="reference" />
+        <attr name="nexta_background_color_tint" format="color" />
+        <attr name="nexta_title_content" format="string" />
+        <attr name="nexta_lines" format="integer" />
+        <attr name="nexta_max_lines" format="integer" />
+        <attr name="nexta_ellipsize" format="enum">
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="nexta_all_bold" format="boolean" />
+        <attr name="nexta_show_tick" format="boolean" />
+        <attr name="nexta_text_color" format="color" />
+        <attr name="nexta_text_size" format="dimension" />
+        <attr name="nexta_regular_font" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CpnSchoolTaskProgress">
+        <attr name="nexta_progress_title" format="string" />
+        <attr name="nexta_progress_color" format="reference" />
+        <attr name="nexta_progress_max" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnSchoolTaskTableRow">
+    </declare-styleable>
+
+    <declare-styleable name="PaintColorButton">
+        <attr name="ptv_bg_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CpnHeader">
+        <attr name="nexta_text" format="reference"/>
+        <attr name="nexta_header_lines" format="integer" />
+        <attr name="nexta_header_max_lines" format="integer" />
+        <attr name="nexta_show_group_button" format="boolean"/>
+        <attr name="nexta_background" format="reference"/>
+        <attr name="nexta_icon_and_text_color" format="color"/>
+        <attr name="nexta_size" format="dimension"/>
+        <attr name="nexta_tab_type" format="enum">
+            <enum name="exercise" value="0" />
+            <enum name="lesson" value="1" />
+            <enum name="video" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CpnSchoolEditText">
+        <attr name="nexta_school_et_title" format="reference"/>
+        <attr name="nexta_school_et_hint" format="reference"/>
+        <attr name="nexta_school_et_type" format="enum">
+            <enum name="username" value="0" />
+            <enum name="password" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CpnChooseAccount">
+        <attr name="nexta_school_ca_title" format="string"/>
+        <attr name="nexta_school_ca_src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CpnItemButton">
+        <attr name="nexta_is_selected" format="boolean"/>
+        <attr name="nexta_src" format="reference"/>
+        <attr name="nexta_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CpnKeyButton">
+        <attr name="ckb_is_symbol" format="boolean"/>
+        <attr name="ckb_src" format="reference"/>
+        <attr name="ckb_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabLayout2">
+        <attr name="nexta_selected_color" format="color"/>
+        <attr name="nexta_unselected_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CpnWebView">
+        <attr name="nexta_web_view_text_size" format="dimension"/>
+    </declare-styleable>
+</resources>

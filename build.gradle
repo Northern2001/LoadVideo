@@ -1,0 +1,50 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.7.10'
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.google.gms:google-services:4.3.13'
+        classpath 'com.novoda:bintray-release:0.8.0'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+allprojects {
+    repositories {
+        maven {url 'https://www.jitpack.io'}
+    }
+}
+
+ext {
+    gsonVersion = '2.9.0'
+    navigationVersion = '2.5.3'
+    retrofitAndOkHttpVersion = '2.9.0'
+    okhttpLogingVersion = '5.0.0-alpha.4'
+    rxAndroidVersion = '2.1.0'
+    rxJavaVersion = '2.2.19'
+    gsonConverterVersion = '2.9.0'
+    butterknifeVersion = '10.1.0'
+    lifecylceVersion = '2.5.1'
+    lottieVersion = '5.2.0'
+    roomVersion = '2.5.0-beta02'
+    materialVersion = '1.7.0'
+    appCompatVersion = '1.5.1'
+    flexbox = '2.0.1'
+    workVersion = '2.7.1'
+    constraintlayout = '2.1.4'
+    swiperefreshlayout = '1.1.0'
+    viewpager2Version = '1.1.0-beta01'
+}
